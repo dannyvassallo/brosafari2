@@ -3,7 +3,7 @@ function validateForm() {
 
     //For Email Validation
     var atpos = eMail.indexOf("@");
-    var dotpos = eMail.lastIndexOf(".");   
+    var dotpos = eMail.lastIndexOf(".");
 
 //Email
     if (atpos< 1 || dotpos<atpos+2 || dotpos+2>=eMail.length) {
@@ -50,3 +50,29 @@ function nospaces(t){
         t.value=t.value.replace(/\s/g,'');
     }
 }
+
+
+//SHOW ZIP CODE//
+$(function(){
+    setInterval(function(){
+        if($('#entry_404726157').val() === "ZIP"){
+            $('#hider').show()
+        }
+        else{
+            $('#hider').hide()
+        }
+    }, 100)
+});
+
+//Validate Zip//
+$('#ss-submit').on('click', function(){
+    if($('#entry_404726157').val() === "ZIP"){
+        if($('#entry_684406722').val().length < 5 ){
+            alert('Please enter a valid Zip Code.');
+            return false;
+        }
+        else{
+            return true;
+        }
+    }
+});

@@ -53,7 +53,7 @@ set :js_dir, 'javascripts'
 
 set :images_dir, 'images'
 
-set :fonts_dir,  'fonts-folder'
+# set :fonts_dir,  'fonts-folder'
 
 # Build-specific configuration
 configure :build do
