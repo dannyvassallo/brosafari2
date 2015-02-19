@@ -5,3 +5,4 @@
 //= require_centerdiv
 //= require_validate
 //= require_analytics
+//= require_snapchatbtn
