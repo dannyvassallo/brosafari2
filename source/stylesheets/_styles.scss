@@ -9,16 +9,24 @@
     font-style: normal;
 
 }
+
 * {
   margin: 0;
 }
+
 html, body {
   height: 100%;
+  background-color: black;
 }
+
 .page-wrap {
   min-height: 100%;
   /* equal to footer height */
   margin-bottom: -200px;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .page-wrap:after {
@@ -33,6 +41,7 @@ footer, .page-wrap:after {
 #hider{
   display: none;
 }
+
 #overlay{
   background-color: rgba(0,0,0,.5);
   position: absolute;
@@ -43,6 +52,7 @@ footer, .page-wrap:after {
   min-width: 100%;
   z-index: 1 !important;
 }
+
 body{
   background-size: cover;
   background-attachment: fixed;
@@ -51,11 +61,13 @@ body{
   font-family: 'komika_axisregular';
   color: white;
 }
+
 #masthead{
   text-align: center;
   z-index: 9999 !important;
   position: relative;
 }
+
 .img-100{
   width: 100%;
 }
@@ -77,6 +89,7 @@ body{
     margin: 0 auto;
   }
 }
+
 .divider{
   height: 5px;
   background-color: white;
@@ -85,6 +98,7 @@ body{
   max-width: 810px;
   margin: 0 auto;
 }
+
 .dropdownheight{
   height: 34px;
 }
@@ -93,11 +107,13 @@ body{
 .form-control{
   width: 56%;
 }
+
 .ss-q-title{
   width: 87px;
   text-align: left;
   padding-top: 6px;
 }
+
 .ss-choice-label{
   font-size: 10px;
 }
@@ -117,9 +133,11 @@ body{
     border-bottom: solid 5px rgba(0,0,0,.2);
     z-index: 9999;
 }
+
 .navbar-brand{
   padding: 15px 15px;
 }
+
 //FORM//
 #ss-form{
   padding-top: 20px;
@@ -139,23 +157,31 @@ body{
     color: black;
   }
 }
+
 .btn-success{
   -webkit-text-stroke: 2px black;
   font-size: 20px;
   width: 100%;
   color: white !important;
 }
+
 #navigation-table{
   margin-top: 20px;
-  width: 80%;
   margin-left: auto;
   margin-right: auto;
+  display: inline-block;
 }
+
 .dropdown{
   float: right;
   margin-right: 42px;
   width: 56%;
 }
+
+#ss-submit{
+  width: 300px;
+}
+
 //FOOTER//
 footer{
   position: relative;
