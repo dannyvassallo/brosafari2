@@ -18,8 +18,10 @@
     </script>
   </head>
   <body class="<%= page_classes %>">
-    <%= partial "partials/navbar" %>
-    <%= yield %>
+    <div class="page-wrap">
+        <%= partial "partials/navbar" %>
+        <%= yield %>
+    </div>
     <%= partial "partials/footer" %>
     <%= partial "partials/modals" %>
     <%= javascript_include_tag  "all" %>
