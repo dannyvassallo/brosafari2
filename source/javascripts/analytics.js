@@ -5,10 +5,11 @@ function analyticsClick(el){
 }
 
 $(function(){
-  analyticsClick('#facebook')
-  analyticsClick('#twitter')
-  analyticsClick('#instagram')
-  analyticsClick('#spotify')
-  analyticsClick('#youtube')
-  analyticsClick('#itunes')
+  analyticsClick('#facebook');
+  analyticsClick('#twitter');
+  analyticsClick('#instagram');
+  analyticsClick('#spotify');
+  analyticsClick('#youtube');
+  analyticsClick('#itunes');
+  analyticsClick('#snapchat-btn');
 });
